@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-podatki-si",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Slovenia Open Data (podatki.gov.si) CKAN MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d084ffb42ef7bcc8bcc26d6fb27d853b9ee10b209ecd10e0b9850a2c1362eaf5",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-f12a53dc27993cb7f5cd2a4531d43eab0f15490460b88587dd6239a0f89ee49d",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
