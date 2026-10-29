@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-podatki-si",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Slovenia Open Data (podatki.gov.si) CKAN MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-podatki-si": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "podatki-si"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-podatki-si.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/podatki-si",
   "pipeworx": {
-    "sourceHash": "v1-f12a53dc27993cb7f5cd2a4531d43eab0f15490460b88587dd6239a0f89ee49d",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "podatki-si",
+    "gatewaySlug": "podatki-si",
+    "sourceHash": "v1-9d2a1a0614591bfddd59055ecd1cd1359e4c7d130dbe9585a7e5502b39696d13",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
